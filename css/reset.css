@@ -1,0 +1,205 @@
+/* Reset and base styles  */
+* {
+    padding: 0px;
+    margin: 0px;
+    border: none;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+:root {
+    --fz-14: 14px;
+    --fz-15: 15px;
+    --fz-16: 16px;
+    --fz-17: 17px;
+    --fz-18: 18px;
+    --fz-19: 19px;
+    --fz-20: 20px;
+    --fz-21: 21px;
+    --fz-22: 22px;
+    --fz-23: 23px;
+    --fz-24: 24px;
+    --fz-25: 25px;
+    --fz-26: 26px;
+    --fz-27: 27px;
+    --fz-28: 28px;
+    --fz-29: 29px;
+    --fz-30: 30px;
+    --fz-31: 31px;
+}
+
+.fz14 {
+    font-size: var(--fz-14);
+}
+
+.fz16 {
+    font-size: var(--fz-16);
+}
+
+.fz18 {
+    font-size: var(--fz-18);
+    color: #4a4a59;
+}
+
+.fz24 {
+    font-size: var(--fz-24);
+}
+
+body {
+    overflow-x: hidden;
+    background: white;
+    color: #4a4a59;
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    gap: 30px;
+}
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.wrapper__header {
+    width: 100%;
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+/* Links */
+
+a,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+/* Common */
+
+aside,
+nav,
+footer,
+header,
+section,
+main {
+    display: block;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-size: inherit;
+    font-weight: inherit;
+}
+
+ul,
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+img,
+svg {
+    max-width: 100%;
+    height: auto;
+    user-select: none;
+}
+
+address {
+    font-style: normal;
+}
+
+/* Form */
+
+input,
+textarea,
+button,
+select {
+    font-family: inherit;
+    font-size: inherit;
+    color: inherit;
+    background-color: transparent;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button,
+input[type="submit"] {
+    display: inline-block;
+    box-shadow: none;
+    background-color: transparent;
+    background: none;
+    cursor: pointer;
+}
+
+input:focus,
+input:active,
+button:focus,
+button:active {
+    outline: none;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+label {
+    cursor: pointer;
+}
+
+legend {
+    display: block;
+}
+
+header {
+    border-bottom: 1px solid #e4e4e4;
+}
+
+.header__inner {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.left__navigation {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.left__navigation .logo{
+    max-width: 100px;
+    width: 100%;
+}
+
+.box__arrow{
+    display: flex;
+    align-items: center;
+    gap: 5px;    
+    cursor: pointer; 
+}
+
+.box__arrow .arrow{
+    width: 12px;
+}
