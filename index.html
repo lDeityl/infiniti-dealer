@@ -5,19 +5,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Официальный дилер INFINITI</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/main.css">
     <link rel="icon" href="img/logo.jpg" type="image/jpg">
 
+    <!-- link to css -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/slider.css">
+
     <!-- font -->
-s
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
+
+    <!-- header -->
+
     <header>
         <div class="wrapper__header header__inner">
             <nav class="left__navigation">
@@ -46,7 +52,11 @@ s
             </div>
         </div>
     </header>
+
+    <!-- main -->
+
     <main class="main">
+
         <section class="wrapper model__flex">
             <h1 class="h1__model">Модельный ряд infiniti</h1>
             <div class="flex__box">
@@ -118,6 +128,7 @@ s
                 </div>
             </div>
         </section>
+
         <section class="wrapper gridBox">
             <div class="block__second__section">
                 <img src="img/verification.png" alt="icon" class="image__section__second">
@@ -134,6 +145,37 @@ s
                 </div>
             </div>
         </section>
+
+        <!-- slider -->
+ 
+        <section class="wrapper slider">
+            <div class="slideshow-container">
+                <div class="mySlides">
+                    <div class="fz18 numbertext">Официальный дилер INFINITI</div>
+                    <img src="img/car/1.jpg" style="width:100%" class="image__slider">
+                    <div class="text">Информация о INFINITI</div>
+                </div>
+                <div class="mySlides">
+                    <div class="fz18 numbertext">Официальный дилер INFINITI</div>
+                    <img src="img/car/2.jpg" style="width:100%" class="image__slider">
+                    <div class="text">Информация о INFINITI</div>
+                </div>
+                <div class="mySlides">
+                    <div class="fz18 numbertext">Официальный дилер INFINITI</div>
+                    <img src="img/car/3.jpg" style="width:100%" class="image__slider">
+                    <div class="text">Информация о INFINITI</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">❮</a>
+                <a class="next" onclick="plusSlides(1)">❯</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </section>
+
         <section class="wrapper news">
             <div class="up__new">
                 <h2 class="fz34">НОВОСТИ</h2>
@@ -163,8 +205,13 @@ s
                 </div>
             </div>
         </section>
+
     </main>
+
+    <!-- footer -->
+
     <footer class="bg__white">
+
         <section class="wrapper up__footer">
             <img src="img/logo_for_dark_bg.jpg" alt="logotip" class="logo">
             <nav class="nav__footer">
@@ -181,7 +228,8 @@ s
                     <span class="fz20 bolder__text title__footer white__muted__text">Автомобили с пробегом</span>
                     <a href="" class="fz18 white__text a__white">Автомобили с пробегом в наличии</a>
                     <div class="col__footer">
-                        <span class="fz20 bolder__text title__footer second__title__footer white__muted__text">Условия покупки</span>
+                        <span class="fz20 bolder__text title__footer second__title__footer white__muted__text">Условия
+                            покупки</span>
                         <a href="" class="fz18 white__text a__white">Кредитование</a>
                         <a href="" class="fz18 white__text a__white">Онлайн-одобрение</a>
                         <a href="" class="fz18 white__text a__white">Страхование</a>
@@ -204,10 +252,13 @@ s
                 </div>
             </nav>
         </section>
+
         <hr class="wrapper hr__White">
+
         <section class="wrapper bottom__footer">
             <span class="fz14 white__muted__text">© 2024 All rights reserved</span>
         </section>
+
     </footer>
 
     <script src="js/script.js"></script>
