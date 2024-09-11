@@ -30,6 +30,7 @@
     --fz-29: 29px;
     --fz-30: 30px;
     --fz-31: 31px;
+    --fz-34: 34px;
 }
 
 .fz14 {
@@ -45,8 +46,24 @@
     color: #4a4a59;
 }
 
+.fz20 {
+    font-size: var(--fz-20);
+}
+
 .fz24 {
     font-size: var(--fz-24);
+}
+
+.fz34 {
+    font-size: var(--fz-34);
+}
+
+.bold__text {
+    font-weight: 500;
+}
+
+.bolder__text {
+    font-weight: 600;
 }
 
 body {
@@ -55,8 +72,9 @@ body {
     color: #4a4a59;
     display: flex;
     flex-direction: column;
-    font-family: sans-serif;
+    font-family: "Montserrat", sans-serif;
     gap: 30px;
+    scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -71,16 +89,35 @@ body {
     margin: 0 auto;
 }
 
+.gray {
+    color: rgb(110, 110, 110);
+}
+
+.white__text {
+    color: #fff;
+}
+
+.white__muted__text {
+    color: #c2c2c2;
+}
+
 /* Links */
 
 a,
 a:link,
 a:visited {
     text-decoration: none;
+    transition: all .3s ease;
 }
 
 a:hover {
     text-decoration: none;
+    color: #1d1d20;
+}
+
+a.a__white:hover {
+    color: #d3d3d3;
+    text-shadow: 2px 2px 5px white;
 }
 
 /* Common */
@@ -180,6 +217,7 @@ header {
     gap: 15px;
     justify-content: space-between;
     width: 100%;
+    padding: 10px 0;
 }
 
 .left__navigation {
@@ -188,18 +226,79 @@ header {
     gap: 20px;
 }
 
-.left__navigation .logo{
+.left__navigation .logo {
     max-width: 100px;
     width: 100%;
 }
 
-.box__arrow{
+.right__section__header {
     display: flex;
     align-items: center;
-    gap: 5px;    
-    cursor: pointer; 
+    gap: 15px;
 }
 
-.box__arrow .arrow{
+.box__arrow {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+}
+
+.box__arrow .arrow {
     width: 12px;
+}
+
+.profile__icon {
+    max-width: 40px;
+}
+
+/* footer */
+
+.bg__white {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    background: rgb(0, 0, 0);
+    padding: 25px 0;
+    margin-top: 50px;
+}
+
+.up__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.up__footer .logo {
+    max-width: 100px;
+}
+
+.nav__footer {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.col__footer {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.title__footer {
+    margin-bottom: 20px;
+}
+
+.second__title__footer {
+    margin-top: 30px;
+}
+
+.hr__White{
+    border: 1px solid white;
+}
+
+.bottom__footer{
+    display: flex;
+    justify-content: center;
 }
