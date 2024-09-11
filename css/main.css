@@ -1,0 +1,153 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    margin-top: 50px;
+}
+
+.model__flex {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: var(--fz-34);
+}
+
+.h1__model {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.flex__box {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+}
+
+.item__car {
+    max-width: calc(100% / 4 - 5px);
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 4px;
+    padding-bottom: 30px;
+    overflow: hidden;
+    cursor: pointer;
+    transition: all .3s ease;
+}
+
+.item__car span {
+    padding-left: 15px;
+}
+
+.img__car {
+    max-width: 100%;
+    width: 100%;
+    transition: all .3s ease;
+    object-fit: cover;
+    border-radius: 3px;
+    max-height: 215px;
+    transition: all .5s ease;
+}
+
+.hidden__img {
+    display: none;
+    transition: all .5s ease;
+}
+
+.item__car:hover {
+    box-shadow: 2px 3px 15px rgb(167, 167, 167);
+    border-radius: 5px;
+    transition: all .3s ease;
+}
+
+.item__car:hover .img__car {
+    display: none;
+}
+
+.item__car:hover .hidden__img {
+    display: block;
+}
+
+.gridBox {
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 25px;
+}
+.gridBox3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 25px;
+}
+.block__second__section {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+    border: 1px solid #e9e9ec;
+    border-radius: 8px;
+    padding: 25px 35px 45px 35px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+    transition: all .3s ease;
+}
+
+.block__second__section:hover {
+    box-shadow: none;
+    cursor: pointer;
+}
+
+.image__section__second {
+    width: 30px;
+}
+
+.image__section__second.ss {
+    width: 25px;
+}
+
+.column__text {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.news {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.up__new {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.all__news {
+    border: 1px solid #b1b1be;
+    transition: all .3s ease;
+    padding: 10px 30px;
+}
+
+.all__news:hover {
+    border: 1px solid #303030;
+}
+
+.block__new {
+    display: flex;
+    flex-direction: column;
+    border-radius: 6px;
+    overflow-x: hidden;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.bottom__new {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e9e9ec;
+    gap: 15px;
+    padding: 25px 30px 30px 30px;
+}
+
+.img__new {
+    max-height: 235px;
+    object-fit: cover;
+}
